@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-wfrf
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:rh-ee-chernand-tenant-devfile-sample-wfrf
+      - image: quay.io/redhat-appstudio/user-workload@sha256:662617d948d0456f8bf644f7b9dcf799d955da975739da9f355bc28774502c42
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
