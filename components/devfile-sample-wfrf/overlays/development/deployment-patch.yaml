@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-wfrf
+  namespace: rh-ee-chernand-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:662617d948d0456f8bf644f7b9dcf799d955da975739da9f355bc28774502c42
+        name: container-image
+        resources: {}
+status: {}
